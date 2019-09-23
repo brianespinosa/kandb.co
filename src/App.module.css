@@ -14,7 +14,7 @@
 }
 
 .Header {
-  background-image: radial-gradient(rgba(0,0,0,0),rgba(0,0,0,.15));
+  background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
   min-height: 100vh;
   display: flex;
   flex-direction: column;

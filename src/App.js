@@ -6,7 +6,7 @@ function App() {
   return (
     <div className={styles.App}>
       <header className={styles.Header}>
-        <img src={logo} className={styles.Logo} alt="logo" />
+        <img src={logo} className={styles.Logo} alt='logo' />
       </header>
     </div>
   );
