@@ -1,12 +1,16 @@
 import React from 'react';
 import logo from './kb_title.svg';
 import styles from './App.module.css';
+import Button from './Button';
 
 function App() {
   return (
     <div className={styles.App}>
       <header>
-        <img src={logo} className={styles.Logo} alt='Kandace & Brian' />
+        <h1>
+          Kandace & Brian
+          <img src={logo} className={styles.Logo} alt='Kandace & Brian' />
+        </h1>
       </header>
       <main>
         <h2>Venue</h2>
@@ -35,45 +39,24 @@ function App() {
           and intrepid travelers looking to have a good time in the heart of the
           city.
         </p>
-        <a
-          className={styles.Button}
-          href='https://chambers-sf.com'
-          rel='noopener noreferrer'
-          target='_blank'
-        >
-          Chambers
-        </a>
-        <a
-          className={styles.Button}
-          href='https://www.phoenixsf.com'
-          rel='noopener noreferrer'
-          target='_blank'
-        >
-          Phoenix Hotel
-        </a>
+        <Button content='Chambers' href='https://chambers-sf.com' />
+        <Button content='Phoenix Hotel' href='https://www.phoenixsf.com' />
 
         <h2>Travel</h2>
         <p>
           For a 15% discount on full-price rooms booked directly with Phoenix,
           use the code “direct” under Corporate/Promotion Code on their website
         </p>
+
         <h2>Registry</h2>
-        <a
-          className={styles.Button}
+        <Button
+          content='Heath Ceramics'
           href='https://www.heathceramics.com/apps/giftregistry/registry/83271'
-          rel='noopener noreferrer'
-          target='_blank'
-        >
-          Heath Ceramics
-        </a>
-        <a
-          className={styles.Button}
+        />
+        <Button
+          content='Zola'
           href='http://www.zola.com/registry/kandaceandbrian'
-          rel='noopener noreferrer'
-          target='_blank'
-        >
-          Zola
-        </a>
+        />
       </main>
     </div>
   );
