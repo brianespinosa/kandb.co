@@ -1,12 +1,12 @@
 import React, { PureComponent } from 'react';
-import styles from './App.module.css';
+import styles from './Button.module.css';
 
 class Button extends PureComponent {
   render() {
     const { href, content } = this.props;
     return (
       <a
-        className={styles.Button}
+        className={styles._}
         href={href}
         rel='noopener noreferrer'
         target='_blank'

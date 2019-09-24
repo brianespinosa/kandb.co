@@ -1,4 +1,4 @@
-.App {
+._ {
   text-align: center;
   background-image: url(/kb.svg);
   background-repeat: no-repeat;
@@ -16,21 +16,3 @@
     width: 80%;
   }
 } */
-
-.Button {
-  background-color: rgba(0, 0, 0, 1);
-  border-radius: 3px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  cursor: pointer;
-  display: inline-block;
-  margin: 0.5em;
-  padding: 0.25em 1em;
-  transition: all 200ms ease-in-out;
-}
-
-.Button:hover {
-  background-color: rgba(30, 30, 30, 1);
-  border-color: rgba(255, 255, 255, 0.6);
-  color: #fff;
-  text-decoration: none;
-}
