@@ -1,6 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+/* A01C2D */
+/* DCDCDC */
+/* C29A5B */
+
 html,
 body {
   background-color: #191818;
-  overflow: hidden;
-  margin: 0;
+  height: 100%;
+}
+
+body {
+  /* background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)); */
+  color: #dcdcdc;
+  font-family: 'Abel', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 2em;
+}
+
+#root {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 2.5em;
+  color: #c29a5b;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+h4 {
+  font-size: 0.875em;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 3em;
+}
+
+a {
+  color: #dcdcdc;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: underline;
 }

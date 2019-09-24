@@ -1,24 +1,36 @@
 .App {
   text-align: center;
+  background-image: url(/kb.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60vmin;
+  background-attachment: fixed;
 }
 
 .Logo {
-  height: 60vmin;
-  pointer-events: none;
+  width: 80%;
 }
 
-@media only screen and (min-width: 720px) {
+/* @media only screen and (min-width: 600px) {
   .Logo {
-    height: 40vmin;
+    width: 80%;
   }
+} */
+
+.Button {
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  display: inline-block;
+  margin: 0.5em;
+  padding: 0.25em 1em;
+  transition: all 200ms ease-in-out;
 }
 
-.Header {
-  background-image: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
+.Button:hover {
+  background-color: rgba(30, 30, 30, 1);
+  border-color: rgba(255, 255, 255, 0.6);
+  color: #fff;
+  text-decoration: none;
 }
