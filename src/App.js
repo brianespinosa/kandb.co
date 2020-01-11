@@ -13,17 +13,55 @@ function App() {
         </h1>
       </header>
       <main>
-        <h2>Venue</h2>
+        <h2>Location</h2>
         <p>
-          Phoenix Hotel & Chambers
+          Chambers at Phoenix Hotel
           <br />
-          San Francisco, CA
+          601 Eddy Street
+          <br />
+          San Francisco, CA 94109
         </p>
+
+        <h2>Schedule</h2>
+        <p>
+          4pm arrival
+          <br />
+          Ceremony
+          <br />
+          Cocktail Hour and Reception to Follow
+        </p>
+
+        <h2>Attire</h2>
+        <p>Cocktail Attire</p>
+
+        <h2>RSVP</h2>
+        <p>Please use the form below to RSVP by March 1st.</p>
+        <Button
+          content='Click Here To RSVP'
+          href='https://forms.gle/iitNLVPrZsAMp5SG7'
+        />
+
+        <h2>Registry</h2>
+        <Button
+          content='Heath Ceramics'
+          href='https://www.heathceramics.com/apps/giftregistry/registry/83271'
+        />
+        <Button
+          content='Zola'
+          href='http://www.zola.com/registry/kandaceandbrian'
+        />
+
+        <h2>Travel</h2>
+        <p>
+          For a 15% discount on full-price rooms booked directly with Phoenix,
+          use the code “direct” under Corporate/Promotion Code on their website
+        </p>
+
+        <h2>About the Phoenix</h2>
         <p>
           One of the first things we bonded over was our love of music, so our
           venue seems the perfect fit
         </p>
-        <h3>About the Phoenix</h3>
         <p>
           Sitting at the intersection of the Tenderloin, Civic Center and Little
           Saigon districts, the Phoenix is an oasis amid the grit of downtown
@@ -41,22 +79,6 @@ function App() {
         </p>
         <Button content='Chambers' href='https://chambers-sf.com' />
         <Button content='Phoenix Hotel' href='https://www.phoenixsf.com' />
-
-        <h2>Travel</h2>
-        <p>
-          For a 15% discount on full-price rooms booked directly with Phoenix,
-          use the code “direct” under Corporate/Promotion Code on their website
-        </p>
-
-        <h2>Registry</h2>
-        <Button
-          content='Heath Ceramics'
-          href='https://www.heathceramics.com/apps/giftregistry/registry/83271'
-        />
-        <Button
-          content='Zola'
-          href='http://www.zola.com/registry/kandaceandbrian'
-        />
       </main>
     </div>
   );
