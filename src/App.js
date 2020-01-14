@@ -58,12 +58,13 @@ function App() {
 
         <Section title='Registry'>
           <Button
-            content='Heath Ceramics'
-            href='https://www.heathceramics.com/apps/giftregistry/registry/83271'
-          />
-          <Button
-            content='Zola'
+            content='Zola Registry'
             href='http://www.zola.com/registry/kandaceandbrian'
+          />
+
+          <Button
+            content='Heath Ceramics Registry'
+            href='https://www.heathceramics.com/apps/giftregistry/registry/83271'
           />
         </Section>
 
