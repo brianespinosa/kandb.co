@@ -1,3 +1,15 @@
-# kandb.co
+# next-app-base
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9ed1fbb0-4bd7-433c-9b7a-072b37ce4b51/deploy-status)](https://app.netlify.com/sites/kandb/deploys)
+A quick way to start up a new Nextjs application using my preferred defaults.
+
+## `create-next-app` Template
+
+To spin up a new Nextjs application using this repository:
+
+```
+npx create-next-app@latest -e https://github.com/brianespinosa/next-app-base
+```
+
+## GitHub Repository Template
+
+This repo can also be used as a template by clicking [here](https://github.com/brianespinosa/next-app-base/generate)

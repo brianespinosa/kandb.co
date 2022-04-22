@@ -1,0 +1,66 @@
+{
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[mdx]": {
+    "editor.wordWrap": "on",
+    "editor.wrappingIndent": "same"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "autoSnippet.snippets": [
+    {
+      "pattern": "**/[A-Z]*.js",
+      "snippet": "React Component"
+    },
+    {
+      "pattern": "**/index.js",
+      "snippet": "Export Index"
+    }
+  ],
+  "cssModules.camelCase": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "html": {
+      "attr_quotes": "single"
+    },
+    "javascript": {
+      "self_closing_tag": true
+    }
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "git.autofetch": true,
+  "prettier.requireConfig": true,
+  "jest.coverageColors": {
+    "covered": "rgba(9, 156, 65, 1)",
+    "uncovered": "rgba(0, 0, 0, 1)",
+    "partially-covered": "rgba(235, 198, 52, 1)"
+  },
+  "jest.jestCommandLine": "yarn test",
+  "jest.showCoverageOnLoad": true,
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#000",
+    "activityBar.activeBorder": "#C29A5B",
+    "activityBar.background": "#191818",
+    "activityBar.foreground": "#C29A5B",
+    "activityBar.inactiveForeground": "#C29A5B",
+    "activityBarBadge.background": "#A01C2D",
+    "activityBarBadge.foreground": "#191818",
+    "list.activeSelectionBackground": "#191818",
+    "list.activeSelectionForeground": "#C29A5B",
+    "list.hoverForeground": "#C29A5B",
+    "sideBar.foreground": "#C29A5B",
+    "sideBarSectionHeader.background": "#191818",
+    "sideBarSectionHeader.foreground": "#C29A5B"
+  }
+}
