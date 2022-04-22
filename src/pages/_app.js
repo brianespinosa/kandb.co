@@ -16,9 +16,9 @@ const App = ({ Component, pageProps }) => {
     //  - Do not include https://
     //  - This must be an exact match of your domain.
     //  - If you're using www. for your domain, make sure you include that here.
-    Fathom.load('FATHOM_CODE', {
-      url: 'CUSTOM_TRACKING_SUBDOMAIN',
-      includedDomains: ['THIS_DOMAIN_NAME'],
+    Fathom.load('EGNIRDIP', {
+      url: 'https://who.kandb.co/script.js',
+      includedDomains: ['kandb.co'],
     });
 
     function onRouteChangeComplete() {
