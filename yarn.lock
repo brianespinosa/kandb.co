@@ -2929,6 +2929,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"kandb@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "kandb@workspace:."
+  dependencies:
+    "@bjeco/prettier-config": latest
+    "@bjeco/stylelint-config": latest
+    clsx: 1.1.1
+    eslint: 8.13.0
+    eslint-config-next: 12.1.5
+    fathom-client: 3.4.1
+    husky: 7.0.4
+    lint-staged: 12.4.0
+    next: 12.1.5
+    normalize.css: 8.0.1
+    prettier: 2.6.2
+    react: 18.0.0
+    react-dom: 18.0.0
+    sass: 1.50.1
+    stylelint: 14.7.1
+  languageName: unknown
+  linkType: soft
+
 "kind-of@npm:^6.0.2, kind-of@npm:^6.0.3":
   version: 6.0.3
   resolution: "kind-of@npm:6.0.3"
@@ -3482,28 +3504,6 @@ __metadata:
   checksum: b8ffeb1e262eff7968fc90a2b6767b04cfd9842582a9d0ece0af7049537266e7b2506dfb1d107a32f06dd849ab2aea834d5830f7f4d0e5cb7d36e1ae55d021d9
   languageName: node
   linkType: hard
-
-"next-app-base@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "next-app-base@workspace:."
-  dependencies:
-    "@bjeco/prettier-config": latest
-    "@bjeco/stylelint-config": latest
-    clsx: 1.1.1
-    eslint: 8.13.0
-    eslint-config-next: 12.1.5
-    fathom-client: 3.4.1
-    husky: 7.0.4
-    lint-staged: 12.4.0
-    next: 12.1.5
-    normalize.css: 8.0.1
-    prettier: 2.6.2
-    react: 18.0.0
-    react-dom: 18.0.0
-    sass: 1.50.1
-    stylelint: 14.7.1
-  languageName: unknown
-  linkType: soft
 
 "next@npm:12.1.5":
   version: 12.1.5
