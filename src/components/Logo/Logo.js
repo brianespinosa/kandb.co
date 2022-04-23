@@ -14,6 +14,7 @@ const Logo = () => (
     exit='exit'
     initial='hidden'
     title='bje logo'
+    style={{ originX: 1, originY: 1 }}
     transition={{ ease: 'anticipate', duration: 2 }}
     variants={variants}
     xmlns='http://www.w3.org/2000/svg'
