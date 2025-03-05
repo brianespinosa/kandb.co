@@ -1,13 +1,14 @@
 import Head from 'next/head';
+
+import package_ from '../../package.json';
 import Logo from '../components/Logo';
 import Main from '../components/Main';
-import pkg from '../../package.json';
 
 const Home = () => {
   return (
     <Main>
       <Head>
-        <title>{pkg.name}</title>
+        <title>{package_.name}</title>
       </Head>
 
       <Logo />

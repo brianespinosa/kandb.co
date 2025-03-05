@@ -1,12 +1,13 @@
 import 'normalize.css';
 import './app.css';
+
 import { useEffect } from 'react';
+import Head from 'next/head';
 import { useRouter } from 'next/router';
 import * as Fathom from 'fathom-client';
 import { AnimatePresence } from 'framer-motion';
-import pkg from '../../package.json';
 
-import Head from 'next/head';
+import package_ from '../../package.json';
 
 const App = ({ Component, pageProps }) => {
   const router = useRouter();
@@ -38,7 +39,7 @@ const App = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <title>{pkg.name}</title>
+        <title>{package_.name}</title>
       </Head>
       <AnimatePresence
         exitBeforeEnter

@@ -1,4 +1,5 @@
 import styles from './Logo.module.scss';
+
 import { motion } from 'framer-motion';
 
 const variants = {
