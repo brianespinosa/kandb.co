@@ -43,6 +43,9 @@
     "stylelint-config-standard": "37.0.0",
     "typescript": "5.8.2"
   },
+  "engines": {
+    "node": "22.x"
+  },
   "prettier": "@bjeco/prettier-config",
   "browserslist": {
     "production": [
