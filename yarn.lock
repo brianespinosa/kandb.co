@@ -3976,6 +3976,7 @@ __metadata:
     react: "npm:19.1.0"
     react-dom: "npm:19.1.0"
     sass: "npm:1.86.0"
+    simple-git-hooks: "npm:2.13.1"
     stylelint: "npm:16.17.0"
     stylelint-config-css-modules: "npm:4.4.0"
     stylelint-config-idiomatic-order: "npm:10.0.0"
@@ -5669,6 +5670,15 @@ __metadata:
   version: 4.1.0
   resolution: "signal-exit@npm:4.1.0"
   checksum: 10/c9fa63bbbd7431066174a48ba2dd9986dfd930c3a8b59de9c29d7b6854ec1c12a80d15310869ea5166d413b99f041bfa3dd80a7947bcd44ea8e6eb3ffeabfa1f
+  languageName: node
+  linkType: hard
+
+"simple-git-hooks@npm:2.13.1":
+  version: 2.13.1
+  resolution: "simple-git-hooks@npm:2.13.1"
+  bin:
+    simple-git-hooks: cli.js
+  checksum: 10/a315ab71dcc5da1552970051c8b05ab745496e95667501e6961165f9946b58119ed8c3aa0e97748ca04c61b891936e3464c5feb4c5fb2d70a79e8f431809453d
   languageName: node
   linkType: hard
 

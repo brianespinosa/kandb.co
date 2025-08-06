@@ -33,6 +33,7 @@
     "postcss": "8.5.3",
     "prettier": "3.5.3",
     "sass": "1.86.0",
+    "simple-git-hooks": "2.13.1",
     "stylelint": "16.17.0",
     "stylelint-config-css-modules": "4.4.0",
     "stylelint-config-idiomatic-order": "10.0.0",
@@ -42,6 +43,9 @@
   },
   "engines": {
     "node": "22.x"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
   },
   "prettier": "@bjeco/prettier-config",
   "browserslist": {
