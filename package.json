@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "postinstall": "husky install",
     "lint": "eslint ./ && stylelint \"**/*.{css,scss,sass}\"",
     "pretty": "prettier --write .",
     "open-browser": "open http://localhost:3000",
@@ -30,7 +29,6 @@
     "eslint-plugin-json-format": "2.0.1",
     "eslint-plugin-simple-import-sort": "12.1.1",
     "eslint-plugin-unicorn": "56.0.1",
-    "husky": "9.1.7",
     "lint-staged": "15.5.0",
     "postcss": "8.5.3",
     "prettier": "3.5.3",
@@ -57,11 +55,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "packageManager": "yarn@4.7.0"
 }

@@ -3242,15 +3242,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:9.1.7":
-  version: 9.1.7
-  resolution: "husky@npm:9.1.7"
-  bin:
-    husky: bin.js
-  checksum: 10/c2412753f15695db369634ba70f50f5c0b7e5cb13b673d0826c411ec1bd9ddef08c1dad89ea154f57da2521d2605bd64308af748749b27d08c5f563bcd89975f
-  languageName: node
-  linkType: hard
-
 "iconv-lite@npm:^0.6.2":
   version: 0.6.3
   resolution: "iconv-lite@npm:0.6.3"
@@ -3977,7 +3968,6 @@ __metadata:
     eslint-plugin-simple-import-sort: "npm:12.1.1"
     eslint-plugin-unicorn: "npm:56.0.1"
     fathom-client: "npm:3.7.2"
-    husky: "npm:9.1.7"
     lint-staged: "npm:15.5.0"
     next: "npm:15.2.4"
     normalize.css: "npm:8.0.1"
