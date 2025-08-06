@@ -15,7 +15,6 @@
   "dependencies": {
     "clsx": "2.1.1",
     "fathom-client": "3.7.2",
-    "framer-motion": "12.6.2",
     "next": "15.2.4",
     "normalize.css": "8.0.1",
     "react": "19.1.0",

@@ -2753,28 +2753,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:12.6.2":
-  version: 12.6.2
-  resolution: "framer-motion@npm:12.6.2"
-  dependencies:
-    motion-dom: "npm:^12.6.1"
-    motion-utils: "npm:^12.5.0"
-    tslib: "npm:^2.4.0"
-  peerDependencies:
-    "@emotion/is-prop-valid": "*"
-    react: ^18.0.0 || ^19.0.0
-    react-dom: ^18.0.0 || ^19.0.0
-  peerDependenciesMeta:
-    "@emotion/is-prop-valid":
-      optional: true
-    react:
-      optional: true
-    react-dom:
-      optional: true
-  checksum: 10/913b966bca9d9a33fb251ab51da787b13b80a2336e7e572cd780488fd14af4ad78fb1d36893364dea8818f5903fb027e760abf281370e37352f1c5ee625adbb5
-  languageName: node
-  linkType: hard
-
 "fs-minipass@npm:^2.0.0, fs-minipass@npm:^2.1.0":
   version: 2.1.0
   resolution: "fs-minipass@npm:2.1.0"
@@ -3999,7 +3977,6 @@ __metadata:
     eslint-plugin-simple-import-sort: "npm:12.1.1"
     eslint-plugin-unicorn: "npm:56.0.1"
     fathom-client: "npm:3.7.2"
-    framer-motion: "npm:12.6.2"
     husky: "npm:9.1.7"
     lint-staged: "npm:15.5.0"
     next: "npm:15.2.4"
@@ -4444,22 +4421,6 @@ __metadata:
   bin:
     mkdirp: bin/cmd.js
   checksum: 10/d71b8dcd4b5af2fe13ecf3bd24070263489404fe216488c5ba7e38ece1f54daf219e72a833a3a2dc404331e870e9f44963a33399589490956bff003a3404d3b2
-  languageName: node
-  linkType: hard
-
-"motion-dom@npm:^12.6.1":
-  version: 12.6.1
-  resolution: "motion-dom@npm:12.6.1"
-  dependencies:
-    motion-utils: "npm:^12.5.0"
-  checksum: 10/f39bc272f5d36b974ae1f99f802f3f2b503846cf955d15ae32a5177023b99f86180ba0be2d74e4a3ec5612c4c9fb086cc62d81262be9e29b2d28247713e498a7
-  languageName: node
-  linkType: hard
-
-"motion-utils@npm:^12.5.0":
-  version: 12.5.0
-  resolution: "motion-utils@npm:12.5.0"
-  checksum: 10/f2d754a9e1c4cd829f0703ce47bbeb3e9967994a9cb35e759f34de16af6c520a4959b04ff6998211ca67dc7bfe0002d9b2465858167b1971b0403f63289f97fc
   languageName: node
   linkType: hard
 

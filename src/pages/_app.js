@@ -5,7 +5,6 @@ import { useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import * as Fathom from 'fathom-client';
-import { AnimatePresence } from 'framer-motion';
 
 import package_ from '../../package.json';
 
@@ -41,12 +40,8 @@ const App = ({ Component, pageProps }) => {
       <Head>
         <title>{package_.name}</title>
       </Head>
-      <AnimatePresence
-        exitBeforeEnter
-        onExitComplete={() => window.scrollTo(0, 0)}
-      >
-        <Component {...pageProps} />
-      </AnimatePresence>
+
+      <Component {...pageProps} />
     </>
   );
 };
