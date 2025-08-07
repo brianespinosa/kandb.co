@@ -1,5 +1,5 @@
 {
-  "*.{css,scss,sass,less}": ["stylelint --fix", "prettier --write"],
-  "*.{js,jsx,ts,tsx}": ["eslint --fix", "prettier --write"],
-  "*.{md,mdx,html}": ["prettier --write"]
+  "*.{css,scss,sass,less}": ["stylelint --fix", "yarn pretty-quick --staged"],
+  "*.{js,jsx,ts,tsx}": ["eslint --fix", "yarn pretty-quick --staged"],
+  "*.{md,mdx,html}": ["yarn pretty-quick --staged"]
 }

@@ -23,26 +23,26 @@
     "@bjeco/prettier-config": "*",
     "@types/node": "22.13.14",
     "@types/react": "19.0.12",
-    "eslint": "9.23.0",
-    "eslint-config-next": "15.2.4",
-    "eslint-config-prettier": "10.1.1",
-    "eslint-plugin-json-format": "2.0.1",
+    "eslint": "9.32.0",
+    "eslint-config-next": "15.4.4",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-jest": "29.0.1",
     "eslint-plugin-simple-import-sort": "12.1.1",
-    "eslint-plugin-unicorn": "56.0.1",
     "lint-staged": "15.5.0",
     "postcss": "8.5.3",
     "prettier": "3.5.3",
+    "pretty-quick": "4.2.2",
     "sass": "1.86.0",
     "simple-git-hooks": "2.13.1",
-    "stylelint": "16.17.0",
-    "stylelint-config-css-modules": "4.4.0",
+    "stylelint": "16.22.0",
+    "stylelint-config-css-modules": "4.5.1",
     "stylelint-config-idiomatic-order": "10.0.0",
-    "stylelint-config-recommended-scss": "14.1.0",
-    "stylelint-config-standard": "37.0.0",
+    "stylelint-config-recommended-scss": "15.0.1",
+    "stylelint-config-standard": "38.0.0",
     "typescript": "5.8.2"
   },
   "engines": {
-    "node": "22.x"
+    "node": "20"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
