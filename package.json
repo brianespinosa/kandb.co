@@ -20,7 +20,8 @@
     "react-dom": "19.1.1"
   },
   "resolutions": {
-    "semver": "7.5.2"
+    "semver": "7.5.2",
+    "ip": "1.1.9"
   },
   "devDependencies": {
     "@bjeco/prettier-config": "*",
@@ -63,5 +64,5 @@
       "last 1 safari version"
     ]
   },
-  "packageManager": "yarn@4.7.0"
+  "packageManager": "yarn@4.9.2"
 }
