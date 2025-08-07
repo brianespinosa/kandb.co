@@ -19,6 +19,9 @@
     "react": "19.1.1",
     "react-dom": "19.1.1"
   },
+  "resolutions": {
+    "semver": "7.5.2"
+  },
   "devDependencies": {
     "@bjeco/prettier-config": "*",
     "@types/node": "24.2.0",
