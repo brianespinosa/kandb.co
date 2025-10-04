@@ -1,37 +1,16 @@
 {
   "name": "kandb",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "scripts": {
-    "build": "next build",
-    "lint": "eslint ./ && stylelint \"**/*.{css,scss,sass}\"",
-    "pretty": "prettier --write .",
-    "open-browser": "open http://localhost:3000",
-    "serve": "next start",
-    "start": "yarn open-browser && next dev --turbopack",
-    "test": "echo \"Warning: no test specified\" && exit 0"
+    "lint": "stylelint \"**/*.{css,scss,sass}\"",
+    "pretty": "prettier --write ."
   },
   "dependencies": {
-    "clsx": "2.1.1",
-    "fathom-client": "3.7.2",
-    "next": "15.4.6",
-    "normalize.css": "8.0.1",
-    "react": "19.1.1",
-    "react-dom": "19.1.1"
-  },
-  "resolutions": {
-    "semver": "7.5.2",
-    "ip": "1.1.9"
+    "normalize.css": "8.0.1"
   },
   "devDependencies": {
     "@bjeco/prettier-config": "*",
-    "@types/node": "24.2.0",
-    "@types/react": "19.1.9",
-    "eslint": "9.32.0",
-    "eslint-config-next": "15.4.6",
-    "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-jest": "29.0.1",
-    "eslint-plugin-simple-import-sort": "12.1.1",
     "lint-staged": "16.1.4",
     "postcss": "8.5.6",
     "prettier": "3.6.2",
@@ -42,27 +21,11 @@
     "stylelint-config-css-modules": "4.5.1",
     "stylelint-config-idiomatic-order": "10.0.0",
     "stylelint-config-recommended-scss": "15.0.1",
-    "stylelint-config-standard": "39.0.0",
-    "typescript": "5.8.2"
-  },
-  "engines": {
-    "node": "20"
+    "stylelint-config-standard": "39.0.0"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
   },
   "prettier": "@bjeco/prettier-config",
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "packageManager": "yarn@4.9.2"
 }

@@ -1,7 +1,41 @@
+@import url('normalize.css');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+main {
+  width: 100%;
+  height: 100%;
+}
+
+html,
 body {
   padding: 0;
   margin: 0;
-  background-color: #fafafa;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  background-color: #21191a;
+  font-family: sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
+  width: 50vmin;
+  height: 50vmin;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip-path: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
