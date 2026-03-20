@@ -1,4 +1,0 @@
-{
-  "*.{css,scss,sass,less}": ["stylelint --fix", "yarn pretty-quick --staged"],
-  "*.{md,mdx,html}": ["yarn pretty-quick --staged"]
-}

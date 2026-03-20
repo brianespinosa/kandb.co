@@ -4,5 +4,5 @@ repository:
   name: kandb.co
   description: "❤️"
   homepage: https://kandb.co
-  topics: nextjs, react, typescript
+  topics: nextjs,react,typescript
   private: false
