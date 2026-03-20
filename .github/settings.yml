@@ -1,0 +1,8 @@
+_extends: brianespinosa/settings:nextjs.yml
+
+repository:
+  name: kandb.co
+  description: "❤️"
+  homepage: https://kandb.co
+  topics: nextjs, react, typescript
+  private: false
