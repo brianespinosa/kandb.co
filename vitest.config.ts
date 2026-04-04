@@ -18,6 +18,12 @@ export default defineConfig({
       enabled: true,
       provider: 'v8',
       exclude: ['node_modules/**', 'e2e/**'],
+      thresholds: {
+        statements: 100,
+        branches: 100,
+        functions: 100,
+        lines: 100,
+      },
     },
   },
 });
