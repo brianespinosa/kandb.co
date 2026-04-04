@@ -1,5 +1,5 @@
 # NOTE: This is a local composite action and requires the repository to have
-# already been checked out before it is called (e.g. actions/checkout@v6.0.2).
+# already been checked out before it is called (e.g. actions/checkout).
 #
 # NOTE: We do not use the built-in `cache: yarn` option on actions/setup-node
 # because v6 restricts automatic caching to npm only. Yarn caching is handled

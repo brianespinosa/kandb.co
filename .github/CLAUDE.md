@@ -8,8 +8,8 @@ Runs the Claude Code GitHub Action, enabling Claude to handle issues and PRs via
 ### `claude-code-review.yml`
 Runs automated Claude code review on pull requests.
 
-### CI (TODO)
-A `ci.yml` workflow should be added once the toolchain is more complete (Biome, Vitest, Playwright). Use `career` as the reference implementation for workflow structure.
+### `ci.yml`
+Runs Biome lint/format checks on every push and PR targeting `main`. Additional jobs (`knip`, `test`, `build`, `e2e`, `lighthouse`) will be added as their respective tooling is introduced. Use `career` as the reference implementation for workflow structure.
 
 ## Dependabot
 
