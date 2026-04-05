@@ -9,7 +9,7 @@ Runs the Claude Code GitHub Action, enabling Claude to handle issues and PRs via
 Runs automated Claude code review on pull requests.
 
 ### `ci.yml`
-Runs checks on every push and PR targeting `main`. Active jobs: `biome`, `knip`, `typecheck`, `test`. Additional jobs (`build`, `e2e`, `lighthouse`) will be added as their respective tooling is introduced. Use `career` as the reference implementation for workflow structure.
+Runs checks on every push and PR targeting `main`. Active jobs: `biome`, `knip`, `typecheck`, `test`, `build`, `e2e`. The `build` job deploys to Vercel and outputs the preview URL; `e2e` depends on `build` and runs only on PRs. A `lighthouse` job may be added in the future. Use `career` as the reference implementation for workflow structure.
 
 ## Dependabot
 
