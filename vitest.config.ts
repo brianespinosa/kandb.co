@@ -13,11 +13,11 @@ export default defineConfig({
     environment: 'happy-dom',
     globals: true,
     setupFiles: ['./vitest.setup.ts'],
-    exclude: ['e2e/**', 'node_modules/**'],
+    exclude: ['.claude/**', 'e2e/**', 'node_modules/**'],
     coverage: {
       enabled: true,
       provider: 'v8',
-      exclude: ['node_modules/**', 'e2e/**'],
+      exclude: ['.claude/**', 'node_modules/**', 'e2e/**'],
       thresholds: {
         statements: 100,
         branches: 100,
