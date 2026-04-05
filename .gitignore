@@ -9,8 +9,10 @@
 /.next/
 /out/
 
-# test coverage
-/coverage/
+# testing
+/coverage
+/playwright-report
+/test-results
 
 # typescript
 *.tsbuildinfo
