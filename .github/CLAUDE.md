@@ -20,11 +20,22 @@ Runs on push and pull request to `main`. Jobs:
 
 Concurrency cancels in-progress runs on PRs when new commits are pushed. Runs on `main` are never cancelled.
 
+## Vercel Deployment
+
+The `build` job requires three repository secrets: `VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`. On PRs it deploys a preview; on `main` it deploys to production. The deployment URL is passed to the `e2e` job via job outputs.
+
+`VERCEL_BYPASS_SECRET` is used by the `e2e` job to bypass Vercel deployment protection when running tests.
+
 ## Dependabot Auto-merge
 
 Config: `.github/workflows/dependabot-auto-merge.yml`
 
 Triggers on `pull_request_target`. Squash-merges Dependabot PRs automatically.
+
+## Notes
+
+- Node version is pinned via `.nvmrc` — update there to change it everywhere
+- Corepack must be enabled before running any `yarn` commands — handled in the composite action
 
 ## Dependabot
 
@@ -32,6 +43,6 @@ Config: `.github/dependabot.yml`
 
 Monitors `github-actions` and `npm` dependencies daily, targeting `main`. Commit messages use `chore` prefix via the `commit-message` config.
 
-## Settings
+## E2E Coverage Policy
 
-`settings.yml` extends `brianespinosa/settings:nextjs.yml` via the [probot/settings](https://github.com/apps/settings) GitHub App.
+Any new user-facing feature must have a corresponding e2e spec added or updated before the PR is merged. Document the spec in the PR description's test plan section.
