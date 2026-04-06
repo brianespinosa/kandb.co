@@ -7,20 +7,18 @@
 # dependencies
 /node_modules
 /.pnp
-.pnp.js
-
-# next.js
-/.next/
-/out/
 
 # testing
 /coverage
 /playwright-report
 /test-results
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# next.js
+/.next/
+/out/
+
+# production
+/build
 
 # misc
 .DS_Store
@@ -32,10 +30,17 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# local env files
-.env*.local
+# env files (can opt-in for committing if needed)
+.env*
 
-# yarn - Not using Zero Installs
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# yarn - Zero Installs not used; releases committed for reproducibility
 # https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
 .pnp.*
 .yarn/*
@@ -44,4 +49,3 @@ yarn-error.log*
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-node_modules
