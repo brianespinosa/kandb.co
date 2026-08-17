@@ -39,6 +39,7 @@
     "@vercel/python-analysis/js-yaml": ">=4.3.1 <5",
     "@vercel/python-analysis/minimatch": "^10.2.3",
     "@vercel/sandbox/undici": ">=7.29.0 <8",
+    "postcss/nanoid": ">=3.3.18 <4",
     "vercel/undici": ">=6.28.0 <7",
     "vitest/vite": ">=8.0.16 <9"
   },
