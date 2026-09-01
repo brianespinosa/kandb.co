@@ -62,7 +62,7 @@
     "@types/react-dom": "19.2.5",
     "@vitejs/plugin-react": "5.1.4",
     "@vitest/coverage-v8": "4.1.2",
-    "happy-dom": "20.11.6",
+    "happy-dom": "20.11.15",
     "knip": "6.33.0",
     "lefthook": "2.1.12",
     "sass": "1.103.1",
