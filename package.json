@@ -28,26 +28,6 @@
       "not dead"
     ]
   },
-  "resolutions": {
-    "@vercel/backends/srvx": "^0.11.13",
-    "@vercel/blob/undici": ">=6.28.0 <7",
-    "@vercel/fastify/@tootallnate/once": "^3.0.1",
-    "@vercel/fun/@tootallnate/once": "^3.0.1",
-    "@vercel/fun/tar": ">=7.5.11",
-    "@vercel/node/undici": ">=6.28.0 <7",
-    "@vercel/prepare-flags-definitions/minimatch": "^10.2.3",
-    "@vercel/python-analysis/js-yaml": ">=4.3.1 <5",
-    "@vercel/python-analysis/minimatch": "^10.2.3",
-    "@vercel/python-analysis/smol-toml": ">=1.7.1 <2",
-    "@vercel/rust/smol-toml": ">=1.7.1 <2",
-    "@vercel/sandbox/undici": ">=7.29.0 <8",
-    "minimatch@npm:10.2.5/brace-expansion": ">=5.0.7 <6",
-    "postcss/nanoid": ">=3.3.18 <4",
-    "tsx/esbuild": ">=0.28.1 <1",
-    "vercel/smol-toml": ">=1.7.1 <2",
-    "vercel/undici": ">=6.28.0 <7",
-    "vitest/vite": ">=8.0.16 <9"
-  },
   "dependencies": {
     "next": "16.3.5",
     "react": "19.3.0",
@@ -74,5 +54,5 @@
     "vite": "7.3.6",
     "vitest": "4.1.11"
   },
-  "packageManager": "yarn@4.13.0"
+  "packageManager": "pnpm@12.4.2"
 }

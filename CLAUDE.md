@@ -90,9 +90,9 @@ Common types: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, `ci`
 - NEVER create files outside the repository boundary - they will not be version controlled
 - Use `git status` to confirm new files will be tracked by git
 
-### Yarn Install Warnings
+### pnpm Install Warnings
 
-`yarn install` may produce warnings. All warnings MUST be resolved before closing any PR — investigate the cause and fix it (e.g. add or remove a `packageExtensions` entry in `.yarnrc.yml`, pin a transitive dependency, or update the offending package).
+`pnpm install` may produce warnings. All warnings MUST be resolved before closing any PR: investigate the cause and fix it (e.g. add or remove a `packageExtensions` or `overrides` entry in `pnpm-workspace.yaml`, pin a transitive dependency, or update the offending package).
 
 ### Architecture Decision Records (ADRs)
 

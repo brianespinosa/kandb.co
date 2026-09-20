@@ -1,0 +1,45 @@
+savePrefix: ''
+strictPeerDependencies: true
+autoInstallPeers: false
+engineStrict: true
+strictDepBuilds: true
+minimumReleaseAge: 7200 # minutes; keep <= Dependabot cooldown default-days
+
+overrides:
+  "@vercel/backends>srvx": "^0.11.13"
+  "@vercel/blob>undici": ">=6.28.0 <7"
+  "@vercel/fastify>@tootallnate/once": "^3.0.1"
+  "@vercel/fun>@tootallnate/once": "^3.0.1"
+  "@vercel/fun>tar": ">=7.5.11"
+  "@vercel/node>undici": ">=6.28.0 <7"
+  "@vercel/prepare-flags-definitions>minimatch": "^10.2.3"
+  "@vercel/python-analysis>js-yaml": ">=4.3.1 <5"
+  "@vercel/python-analysis>minimatch": "^10.2.3"
+  "@vercel/python-analysis>smol-toml": ">=1.7.1 <2"
+  "@vercel/rust>smol-toml": ">=1.7.1 <2"
+  "@vercel/sandbox>undici": ">=7.29.0 <8"
+  "minimatch@^10>brace-expansion": ">=5.0.7 <6"
+  "postcss>nanoid": ">=3.3.18 <4"
+  "tsx>esbuild": ">=0.28.1 <1"
+  "vercel>smol-toml": ">=1.7.1 <2"
+  "vercel>undici": ">=6.28.0 <7"
+
+# None of the Yarn packageExtensions carried over: verified by removing each
+# one and reinstalling.
+# - @axe-core/playwright's required `playwright-core` peer is satisfied by
+#   the playwright-core pulled in transitively via @playwright/test.
+# - @vercel/express and vercel's `typescript` peer is satisfied by the
+#   `typescript` devDependency already in range.
+# - @napi-rs/wasm-runtime is still in the tree (via knip's oxc chain), but
+#   its @emnapi/core and @emnapi/runtime peers are satisfied for free:
+#   @oxc-resolver/binding-wasm32-wasi declares both as real, non-peer
+#   dependencies, and pnpm resolves peers across the whole graph. A repo
+#   whose graph lacks such a supplier does need an explicit exception.
+
+# @parcel/watcher and esbuild fetch prebuilt native binaries on install;
+# lefthook's postinstall runs `lefthook install` to set up git hooks (there
+# is no separate `prepare` script that does this instead).
+allowBuilds:
+  "@parcel/watcher": true
+  esbuild: true
+  lefthook: true

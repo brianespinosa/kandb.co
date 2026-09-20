@@ -4,7 +4,7 @@
 
 Config: `.github/actions/setup/action.yml`
 
-Shared setup used by all CI jobs after checkout: Node (from `.nvmrc`), corepack enable, `yarn install --immutable`.
+Shared setup used by all CI jobs after checkout: Node (from `.nvmrc`), corepack enable, `pnpm install --frozen-lockfile`.
 
 Note: `actions/checkout` must remain in each job directly — local composite actions can only be resolved after the repo is checked out.
 
@@ -35,7 +35,7 @@ Triggers on `pull_request_target`. Squash-merges Dependabot PRs automatically.
 ## Notes
 
 - Node version is pinned via `.nvmrc` — update there to change it everywhere
-- Corepack must be enabled before running any `yarn` commands — handled in the composite action
+- Corepack must be enabled before running any `pnpm` commands — handled in the composite action
 
 ## Dependabot
 
