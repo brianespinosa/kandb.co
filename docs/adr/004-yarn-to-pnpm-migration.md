@@ -24,11 +24,46 @@ The four `packageExtensions` entries carried by `.yarnrc.yml` (`@axe-core/playwr
 
 - `@axe-core/playwright`'s required `playwright-core` peer is already satisfied by the `playwright-core` pulled in transitively via `@playwright/test`.
 - `@vercel/express` and `vercel`'s `typescript` peer is already satisfied by the `typescript` devDependency.
-- `@napi-rs/wasm-runtime` is no longer present anywhere in the resolved dependency tree at all (knip's current `oxc` dependency chain does not pull it in), so the extension has no target.
+- `@napi-rs/wasm-runtime` is still present in the resolved tree via knip's `oxc` chain, but its `@emnapi/core` and `@emnapi/runtime` peers are already satisfied: `@oxc-resolver/binding-wasm32-wasi` declares both as real, non-peer dependencies, and pnpm resolves peers across the whole graph rather than per branch. A repo whose graph contains no such supplier does need an explicit exception for this package.
 
-### CI caching stays explicit
+### The `vitest/vite` security override was dropped
 
-`docs/adr/002-github-actions-yarn-cache.md` documented why `actions/setup-node`'s built-in `cache` option is unsuitable (corepack-ordering problems, and `v6` restricting automatic caching to npm only). Both reasons apply equally to pnpm, so `.github/actions/setup/action.yml` keeps the same explicit-cache pattern, substituted for pnpm: `pnpm store path` in place of `yarn config get cacheFolder`, keyed on `pnpm-lock.yaml` instead of `yarn.lock`.
+PR #246 added a Yarn resolution `vitest/vite: ">=8.0.16 <9"` for Dependabot
+alerts #58 and #59 (CVE-2026-53571, CVE-2026-53632, vulnerable range
+`>=8.0.0 <=8.0.15`). Under Yarn's node-modules linker the workspace carried two
+vite copies: the direct pin and a nested copy reached through vitest, which had
+drifted into the vulnerable range. The resolution scoped the fix to the nested
+copy only.
+
+pnpm resolves a single shared vite instance at the direct pin, 7.3.6, which is
+outside both vulnerable ranges. Three candidate pnpm expressions were tested
+and all rejected:
+
+- `vitest>vite` as an override fails the install outright with
+  `ERR_PNPM_PEER_DEP_ISSUES`. vite is a peer of vitest, so the override adds a
+  constraint against the single shared instance instead of forking a copy.
+- An unqualified `vite` override force-resolves to the highest matching
+  version, silently upgrading to 8.3.0 and defeating the exact pin.
+- `packageExtensions` is inert here. It only fills in fields a manifest does
+  not already declare, and vitest already declares `peerDependencies.vite`.
+
+The override is therefore dropped rather than translated. What stands in for it
+is Dependabot's scanning of `pnpm-lock.yaml`: if a future bump reintroduces a
+second vite instance in a vulnerable range, it raises an alert the same way it
+raised #58 and #59. There is no override standing guard in the meantime.
+
+### CI installs pnpm with `pnpm/action-setup`
+
+`docs/adr/002-github-actions-yarn-cache.md` documented why
+`actions/setup-node`'s built-in `cache` option was unsuitable for Yarn. That
+reasoning does not carry over. `cache: pnpm` works on `actions/setup-node@v6`
+provided pnpm is already on `PATH` when the cache key is resolved.
+
+`.github/actions/setup/action.yml` therefore runs `pnpm/action-setup` first,
+with no `version` input so the version comes from `packageManager` in
+`package.json` and cannot drift from the pin, then `actions/setup-node` with
+`cache: pnpm`. This drops the hand-maintained `actions/cache` step and the
+dependency on Corepack, which Node stops bundling at version 25.
 
 ## Consequences
 

@@ -18,7 +18,7 @@ overrides:
   "@vercel/python-analysis>smol-toml": ">=1.7.1 <2"
   "@vercel/rust>smol-toml": ">=1.7.1 <2"
   "@vercel/sandbox>undici": ">=7.29.0 <8"
-  "minimatch@10.2.5>brace-expansion": ">=5.0.7 <6"
+  "minimatch@^10>brace-expansion": ">=5.0.7 <6"
   "postcss>nanoid": ">=3.3.18 <4"
   "tsx>esbuild": ">=0.28.1 <1"
   "vercel>smol-toml": ">=1.7.1 <2"
@@ -30,9 +30,11 @@ overrides:
 #   the playwright-core pulled in transitively via @playwright/test.
 # - @vercel/express and vercel's `typescript` peer is satisfied by the
 #   `typescript` devDependency already in range.
-# - @napi-rs/wasm-runtime is no longer present anywhere in the dependency
-#   tree (knip's current oxc dependency chain does not pull it in), so the
-#   extension has no target.
+# - @napi-rs/wasm-runtime is still in the tree (via knip's oxc chain), but
+#   its @emnapi/core and @emnapi/runtime peers are satisfied for free:
+#   @oxc-resolver/binding-wasm32-wasi declares both as real, non-peer
+#   dependencies, and pnpm resolves peers across the whole graph. A repo
+#   whose graph lacks such a supplier does need an explicit exception.
 
 # @parcel/watcher and esbuild fetch prebuilt native binaries on install;
 # lefthook's postinstall runs `lefthook install` to set up git hooks (there
